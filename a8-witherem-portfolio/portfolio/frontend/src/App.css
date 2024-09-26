@@ -1,0 +1,300 @@
+
+:root {
+    /* --cream: Hexadecimal(#F0E3D2); */
+    --cream: hsl(34, 50%, 88%);
+    --grey: hsl(47, 14%, 67%);
+    --pink: hsla(17.55, 42%, 51%, 0.8);
+    --brown: hsl(27, 43%, 45%);
+    --green: hsl(53, 24%, 37%);
+    --red: hsl(7, 38%, 30%);
+    --black: hsl(50, 7%, 16%);
+  }
+  
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  body {       /* Can alternatively define in html {}. */
+    background-color:var(--pink);
+    background:url(images/website-background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+
+    color:var(--black);
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 0, 2%;
+    padding:20px;
+    max-width: 890px;
+    line-height: 1.5;
+  }
+  
+  /*  ----- Page layout blocks -----  */
+
+  header img {
+    height: 50px;
+    vertical-align: middle;
+    line-height: 1;
+  }
+  header {
+    background-color: var(--red);
+    text-align: center;
+    color: var(--cream);
+    margin: 0, auto;
+    padding: 20px;
+  }
+
+  main {
+    background-color: var(--pink);
+    text-align: left;
+    color: var(--cream);
+    margin: 2%, 8%;
+    padding: 20px;
+    border: 2px solid var(--red);
+  }
+
+  /* section {} */
+  article {
+    background-color: var(--red);
+    margin: 2%;
+    padding: 30px;
+  }
+    /* #topic1 {}
+    #topic2 {}
+  div {}
+  aside {} */
+  
+  footer {
+    background-color: var(--green);
+    text-align: center;
+    color:var(--grey);
+    /* h1, h2, h3, h4, h5, h6 {font-family: 'Libre Baskerville', serif;}
+    font-family: 'Source Sans 3', sans-serif; */
+    margin: 0, auto;
+    padding: 20px;
+  }
+
+  
+  /* ----- Anchors ----- Text links */
+  a {color: var(--brown)}
+  /* a:link {}
+  a:hover {}
+  a:active {}
+  a:visited {} */
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+  nav{
+    line-height: 2;
+    text-align: center;
+    display: flex;
+  }
+  nav a {
+    background-color: var(--green);
+    color: var(--cream);
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid var(--cream);
+    margin: 1%;
+    padding:1%;
+    flex-flow: row wrap;
+  }
+  nav a:hover{
+    background-color: var(--cream);
+    color: var(--green);
+  }
+  nav.local { 
+    text-align: center;
+    display: flex;
+  }
+  nav.local a {
+    background-color: var(--cream);
+    color: var(--brown);
+    font-weight: bold;
+    text-decoration: none;
+    border: 3px solid var(--brown);
+    padding:0;
+    margin-left: 2%;
+    flex-flow: row wrap;
+  }
+  nav.local a:hover {
+    background-color: var(--brown);
+    color: var(--cream);
+  }
+  
+  /*  -----  Typography  ----- */
+  /* p {}
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {} */
+  
+  h1, h2, h3, h4, h5, h6 {font-family: 'Libre Baskerville', serif;}
+  /* h1 {}
+  h2 {}
+  h3 {}
+  h4 {}
+  h5 {}
+  h6 {} */
+  
+  /* abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {} */
+  
+  /*  ----- Coding or instructional typography ----- */
+  /* pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {} */
+  
+  /*  ----- Table ----- */
+  table {
+    margin: 0;
+    margin-bottom: 4%;
+    width: 20%;
+    flex-flow: row wrap;
+  }
+  caption {
+    margin: 2%;
+  }
+  /* thead {}
+  tbody {}
+  tfoot {}
+  tr {}
+    tr:nth-child(even) {} */
+  th {
+    border-bottom: 3px solid var(--brown);
+  }
+  td {
+    padding: 2px;
+    border-bottom: 1px solid var(--pink);
+    flex-flow: row wrap;
+  }
+    /* td:nth-child(1) {}
+  colgroup {}
+  data {}
+  datalist {} */
+  
+  
+  /*  ----- Form ----- */
+  /* form {} */
+  fieldset {
+    border: 2px solid var(--brown);
+    margin-top: 2%;
+    padding: 3%;
+  }
+    legend {
+      color:var(--cream);
+      font-size: 100%;
+      font-weight: bold;
+    }
+  label {
+    display: block;
+    margin-top: 2%;
+  }
+  button {
+    border-radius: 3px;
+    background-color: var(--brown);
+    color: var(--cream);
+  }
+  button:hover{
+    color: var(--brown);
+    background-color: var(--cream);
+  }
+  input {
+    margin: 1%;
+  }
+  select {
+    margin: 1%;
+  }
+    /* optgroup {}
+    option {} */
+  textarea {
+    padding: 2%;
+    height: 5%;
+    width: 40%;
+    border: 1px solid var(--cream);
+  }
+  /* output {}
+  meter {}
+  progress {} */
+  
+  
+  /* ----- Media ----- */
+  /* figure {}
+    figcaption {}
+    figure img {}
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {} */
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  .gallery {
+    display:flex;
+    flex-flow: row wrap;
+  }
+  .gallery figure {
+    width: 300px;
+    margin:1%;
+    padding:2%;
+    border:3px solid var(--brown)
+  }
+  .gallery img {
+    width:100%;
+  }
+  .gallery figcaption {
+    display:block;
+    padding:3px;
+  }
+  
+  /* .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {} */
+
+  @import "~react-image-gallery/styles/css/image-gallery.css";
+  
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {}
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
+  
